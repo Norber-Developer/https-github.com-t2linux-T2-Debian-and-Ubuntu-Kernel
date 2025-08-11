@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout repo'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: 'Set up Python 3.9'
         uses: actions/setup-python@v5.4.0
       - name: 'Install dependencies'
@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout Repo'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Build script
         id: build
@@ -61,7 +61,7 @@ jobs:
           remove-haskell: 'true'
 
       - name: 'Checkout Repo'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Build script
         id: build
@@ -125,7 +125,7 @@ jobs:
           remove-haskell: 'true'
 
       - name: 'Checkout Repo'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Build script
         id: build
@@ -189,7 +189,7 @@ jobs:
           remove-haskell: 'true'
 
       - name: 'Checkout Repo'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Build script
         id: build
@@ -253,7 +253,7 @@ jobs:
           remove-haskell: 'true'
 
       - name: 'Checkout Repo'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Build script
         id: build
@@ -317,7 +317,7 @@ jobs:
           remove-haskell: 'true'
 
       - name: 'Checkout Repo'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Build script
         id: build
@@ -375,7 +375,7 @@ jobs:
     steps:
 
       - name: 'Checkout Repo'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Update kernel in apt repo
         if: github.ref == 'refs/heads/LTS'
