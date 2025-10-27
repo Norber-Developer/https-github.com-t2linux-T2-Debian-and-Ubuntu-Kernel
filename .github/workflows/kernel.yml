@@ -84,7 +84,7 @@ jobs:
           ls -l
 
       - name: Upload package artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: linux-T2-${{ steps.build.outputs.tag }}-jammy
           path: /tmp/artifacts/*
@@ -148,7 +148,7 @@ jobs:
           ls -l
 
       - name: Upload package artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: linux-T2-${{ steps.build.outputs.tag }}-noble
           path: /tmp/artifacts/*
@@ -212,7 +212,7 @@ jobs:
           ls -l
 
       - name: Upload package artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: linux-T2-${{ steps.build.outputs.tag }}-oracular
           path: /tmp/artifacts/*
@@ -276,7 +276,7 @@ jobs:
           ls -l
 
       - name: Upload package artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: linux-T2-${{ steps.build.outputs.tag }}-bookworm
           path: /tmp/artifacts/*
@@ -340,7 +340,7 @@ jobs:
           ls -l
 
       - name: Upload package artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: linux-T2-${{ steps.build.outputs.tag }}-testing
           path: /tmp/artifacts/*
